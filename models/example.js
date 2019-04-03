@@ -23,8 +23,15 @@ module.exports = function(sequelize, DataTypes) {
     },
     completed: {
       type: DataTypes.BOOLEAN,
-      allowNull: false,
       defaultValue: false
+    },
+    accepted: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    },
+    claimed:{
+      type: DataTypes.TEXT,
+      allowNull: false
     }
   });
   return Bounty;
