@@ -9,4 +9,28 @@ module.exports = function(app) {
       res.render("index", hbObj);
     });
   });
+
+  app.get("/add", function(req,res){
+		res.render('add');
+	});
+
+  // Create a new Bounty
+  app.post("/add", function(req, res) {
+		db.Bounty.create({
+		  title: req.body.title,
+		  description: req.body.description,
+		  payment: req.body.payment,
+		  completed: req.body.completed
+	
+		}).then(function() {
+		
+		
+		res.render('index');
+		  
+		
+		  
+		});
+		
+	  });
+
 };

@@ -29,9 +29,9 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.BOOLEAN,
       defaultValue: false
     },
-    claimed:{
+    claimed: {
       type: DataTypes.TEXT,
-      allowNull: false
+      defaultValue: false
     }
   });
   return Bounty;
