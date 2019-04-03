@@ -2,6 +2,9 @@ require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
 
+//Method override for PUT without jQuery
+var methodOverride = require("method-override");
+
 var db = require("./models");
 
 var app = express();
@@ -11,6 +14,9 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
+
+//PUT with jQuery
+app.use(methodOverride("_method"));
 
 // Handlebars
 app.engine(
@@ -22,7 +28,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-// require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };

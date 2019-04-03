@@ -1,24 +1,30 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
-    });
-  });
+app.put("/bounties/accepted/:id", function(req,res){
+  console.log("Test Accepted");
+  db.Bounty.update({
+    accepted: true
+  },{
+    where:{
+      id: req.params.id
+    }
+  }).then(function(){
+    res.redirect("/");
+  })
+});
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
+app.put("/bounties/completed/:id", function(req,res){
+  console.log("Test Completed");
+  db.Bounty.update({
+    completed: true
+  },{
+    where:{
+      id: req.params.id
+    }
+  }).then(function(){
+    res.redirect("/");
+  })
+});
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
-};
+}
