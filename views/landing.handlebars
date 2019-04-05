@@ -15,10 +15,15 @@
     </div>
     <!-- Submit CREATE Bounty Button with Audio -->
     <!-- <button id="create" type="submit" name="Create Needed Task">Create Bounty</button> -->
-    <button id="create" type="button" onclick="javascript:playSound('cartoon_ricochet.mp3');">Create Bounty</button>
+    <form action='/add' method='POST'>
+    <button id="create" onclick="javascript:playSound('cartoon_ricochet.mp3')">Create Bounty</button>
+    </form>
+    onclick="javascript:playSound('cartoon_ricochet.mp3');
     <!-- Submit COLLECT Bounty Button with Audio -->
     <!-- <button id="bounty" type="submit" name="Bounty">Collect Bounty</button> -->
-    <button id="bounty" type="button" onclick="javascript:playSound('cartoon_ricochet.mp3');">Collect Bounty</button>
+    <form action='/display' method='POST'>
+    <button id="bounty" onclick="javascript:playSound('cartoon_ricochet.mp3');">Wanted </button>
+    </form>
 {{!--     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/main.js"></script> --}}
@@ -27,13 +32,13 @@
 
 
 
-
 <!-- Place in js file for button fx -->
-    {{!-- <script>
+    <script>
     function playSound() {
           var sound = document.getElementById("create");
           sound.play();
       }
+      console.log("play the sound");
     </script>
 
 <script>
@@ -41,6 +46,6 @@
               var sound = document.getElementById("bounty");
               sound.play();
           }
-        </script> --}}
+        </script> 
 
   

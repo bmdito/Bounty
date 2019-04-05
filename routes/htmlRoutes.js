@@ -1,14 +1,14 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // app.get("/", function(req, res) {
-  //   db.Bounty.findAll({}).then(function(results) {
-  //     var hbObj = {
-  //       bounties: results
-  //     };
-  //     res.render("index", hbObj);
-  //   });
-  // });
+  app.get("/bounties", function(req, res) {
+    db.Bounty.findAll({}).then(function(results) {
+      var hbObj = {
+        bounties: results
+      };
+      res.render("index", hbObj);
+    });
+  });
 
   app.get("/", function(req, res) {
     
@@ -16,6 +16,18 @@ module.exports = function(app) {
   
   });
 
+  app.post('/add', function(req,res){
+    console.log('butt click');
+    res.redirect('add');
+
+  });
+
+  app.post('/display', function(req,res){
+    
+    res.redirect('/bounties');
+
+  });
+  
   
 
   app.get("/add", function(req,res){
@@ -33,7 +45,7 @@ module.exports = function(app) {
 		}).then(function() {
 		
 		
-		res.render('index');
+		res.redirect('/bounties');
 		  
 		
 		  

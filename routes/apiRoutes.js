@@ -10,7 +10,7 @@ app.put("/bounties/accepted/:id", function(req,res){
       id: req.params.id
     }
   }).then(function(){
-    res.redirect("/");
+    res.redirect("/bounties");
   })
 });
 
@@ -23,7 +23,7 @@ app.put("/bounties/completed/:id", function(req,res){
       id: req.params.id
     }
   }).then(function(){
-    res.redirect("/");
+    res.redirect("/bounties");
   })
 });
 
