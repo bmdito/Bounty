@@ -1,12 +1,10 @@
-body {
-  background-image: url("../images/bg3c11.jpg");
-}
+
 
 h1 {
   font-family: Bleeding Cowboys;
   font-size: 99px;
   text-align: center;
-  margin-top: 4%;
+  padding-top: 4%;
   text-shadow:
   -0.7px -0.7px 0 rgb(226, 170, 17),
       0.7px -0.7px 0 rgb(226, 170, 17),
@@ -14,6 +12,9 @@ h1 {
   0.7px 0.7px 0 rgb(226, 170, 17);
 }
 
+li {
+  text-decoration: none;
+}
 a.one {
   font-family: Bleeding Cowboys;
   font-size: 27px;
@@ -135,3 +136,12 @@ ul.open_bounties {
   outline: 4px solid black;
 }
 
+#home {
+  background-image: url("../images/bg3c11.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.titTex {
+  font-size: 45px;
+}

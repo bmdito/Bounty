@@ -1,8 +1,7 @@
 <div id="home">
   <h1>Bounty Board</h1>
-  {{!-- link disguised as button to go to add page --}}
-          <a href="/add" class="btn btn-primary">New Bounty</a>
-  <hr>
+  
+  
   <h2>Open Bounties</h2>
   <ul>
     {{#each bounties}}
@@ -11,18 +10,18 @@
     {{#if accepted}}
     {{else}}
     <li>
-      <h3>Title: </h3>{{title}}
-      <h3>ID: </h3>{{id}}
-      <h3>Description: </h3>{{description}}
-      <h3>Accepted</h3> {{#if accepted}}Accepted {{else}} Not Accepted{{/if}}
-      <h3>Completed: </h3>{{#if completed}}Completed{{else}}Not Completed{{/if}}
+      <h3>Title: <span class="titTex"> {{title}}</span> </h3>
+      
+      <h3>Description: <span class="titTex"> {{description}}</span> </h3>
+      
+      
       <br>
       <form method="POST" action="/bounties/accepted/{{this.id}}?_method=PUT">
       <button class="accepted">
         Test Accept
       </button>
       </form>
-      <hr>
+      
     </li>
     {{/if}}
     {{/if}}
@@ -52,7 +51,7 @@
     {{/each}}
   </ul>
   
-  <hr>
+  
   <br>
   <br>
   <h2>Bounties In Completed</h2>
