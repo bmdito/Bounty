@@ -1,3 +1,137 @@
-.list-group-item {
-  line-height: 2.5;
+body {
+  background-image: url("../images/bg3c11.jpg");
 }
+
+h1 {
+  font-family: Bleeding Cowboys;
+  font-size: 99px;
+  text-align: center;
+  margin-top: 4%;
+  text-shadow:
+  -0.7px -0.7px 0 rgb(226, 170, 17),
+      0.7px -0.7px 0 rgb(226, 170, 17),
+      -0.7px 0.7px 0 rgb(226, 170, 17),
+  0.7px 0.7px 0 rgb(226, 170, 17);
+}
+
+a.one {
+  font-family: Bleeding Cowboys;
+  font-size: 27px;
+  color: black;
+  margin-right: 10%; 
+  margin-left: 5%;
+  margin-top: 13.7%;
+  text-decoration: underline black;
+  text-shadow:
+  -0.5px -0.5px 0 rgb(226, 170, 17),
+      0.5px -0.5px 0 rgb(226, 170, 17),
+      -0.5px 0.5px 0 rgb(226, 170, 17),
+      0.5px 0.5px 0 rgb(226, 170, 17);
+  float: left;
+}
+
+a.two {
+  font-family: Bleeding Cowboys;
+  font-size: 27px;
+  color: black;
+  margin-right: 1%;
+  margin-left: 6%;
+  margin-top: 13%;
+  text-decoration: underline black;
+  text-shadow:
+  -0.5px -0.5px 0 rgb(226, 170, 17),
+      0.5px -0.5px 0 rgb(226, 170, 17),
+      -0.5px 0.5px 0 rgb(226, 170, 17),
+      0.5px 0.5px 0 rgb(226, 170, 17);
+  float: left; 
+}
+
+a.three {
+  font-family: Bleeding Cowboys;
+  font-size: 27px;
+  color: black;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 13%;
+  text-decoration: underline black;
+  text-shadow:
+  -0.5px -0.5px 0 rgb(226, 170, 17),
+      0.5px -0.5px 0 rgb(226, 170, 17),
+      -0.5px 0.5px 0 rgb(226, 170, 17),
+      0.5px 0.5px 0 rgb(226, 170, 17); 
+  float: right; 
+}
+
+.ob {
+  font-family: Bleeding Cowboys;
+  font-size: 45px;
+  margin-top: 54%;
+  text-align: center;
+  text-decoration: underline black;
+  text-shadow:
+  -0.5px -0.5px 0 rgb(226, 170, 17),
+      0.5px -0.5px 0 rgb(226, 170, 17),
+      -0.5px 0.5px 0 rgb(226, 170, 17),
+  0.5px 0.5px 0 rgb(226, 170, 17);
+} 
+
+.bip {
+  font-family: Bleeding Cowboys;
+  font-size: 45px;
+  margin-top: 59%;
+  text-align: center;
+  text-decoration: underline black;
+  text-shadow:
+  -0.5px -0.5px 0 rgb(226, 170, 17),
+      0.5px -0.5px 0 rgb(226, 170, 17),
+      -0.5px 0.5px 0 rgb(226, 170, 17),
+  0.5px 0.5px 0 rgb(226, 170, 17);
+}
+
+.bc {
+  font-family: Bleeding Cowboys;
+  font-size: 45px;
+  margin-top: 60%;
+  margin-bottom: 58%;
+  text-align: center;
+  text-decoration: underline black;
+  text-shadow:
+  -0.5px -0.5px 0 rgb(226, 170, 17),
+      0.5px -0.5px 0 rgb(226, 170, 17),
+      -0.5px 0.5px 0 rgb(226, 170, 17),
+  0.5px 0.5px 0 rgb(226, 170, 17);
+}
+
+h3 {
+  font-family: Bleeding Cowboys;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 15px;
+}
+
+ul.open_bounties {
+  font-family: Bleeding Cowboys;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 15px;
+  list-style-type: square;
+} 
+
+.accepted {
+  font-family: Bleeding Cowboys;
+  font-size: 17px;
+  background: rgba(255, 254, 254, 0.486);
+  width: 13%;
+  border: solid 2px rgb(226, 170, 17);
+  outline: 4px solid black;
+}
+
+.completed {
+  font-family: Bleeding Cowboys;
+  font-size: 17px;
+  background: rgba(255, 254, 254, 0.486);
+  width: 13%;
+  border: solid 2px rgb(226, 170, 17);
+  outline: 4px solid black;
+}
+
