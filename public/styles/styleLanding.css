@@ -1,0 +1,60 @@
+body {
+    background-image: url("../images/bg3c7.jpg");
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.relative {
+    font-family: Bleeding Cowboys;
+    font-size: 150px;
+    position: relative;
+    margin-left: 52%;
+    /* margin-top: -205px; */
+    color: black;
+    text-shadow:
+		-0.7px -0.7px 0 rgb(226, 170, 17),
+        0.7px -0.7px 0 rgb(226, 170, 17),
+        -0.7px 0.7px 0 rgb(226, 170, 17),
+		0.7px 0.7px 0 rgb(226, 170, 17);
+}
+
+#create {
+    font-family: Bleeding Cowboys;
+    font-size: 17px;
+    background: rgba(255, 254, 254, 0.486);
+    margin-right: 5%;
+    margin-left: 54%;
+    margin-top: 4%;
+    width: 13%;
+    float: left;
+    border: solid 2px rgb(226, 170, 17);
+    outline: 4px solid black;
+}
+
+#bounty {
+    font-family: Bleeding Cowboys;
+    font-size: 17px;
+    background: rgba(255, 254, 254, 0.486);
+    margin-left: 0%;
+    margin-top: 4%;
+    width: 13%;
+    float: left;
+    border: solid 2px rgb(226, 170, 17);
+    outline: 4px solid black;
+}
+
+#text {
+    font-family: Bleeding Cowboys;
+    color: black;
+    font-size: 28px;
+    margin-left: 57%;
+    margin-top: -12%;
+    text-decoration: underline black;
+    text-shadow:
+		-0.5px -0.5px 0 rgb(226, 170, 17),
+        0.5px -0.5px 0 rgb(226, 170, 17),
+        -0.5px 0.5px 0 rgb(226, 170, 17),
+		0.5px 0.5px 0 rgb(226, 170, 17);
+
+}        
