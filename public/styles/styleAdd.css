@@ -1,72 +1,127 @@
-body {
-    background-image: url("../images/bg3c7.jpg");
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-div.relative {
+h1 {
     font-family: Bleeding Cowboys;
-    font-size: 150px;
-    position: relative;
-    margin-left: 52%;
-    /* margin-top: -205px; */
-    color: black;
+    font-size: 73.5px;
+    padding-top: 0%;
+    margin-left: 33%;
+    padding-left: 24%;
+    padding-right: 0%;
     text-shadow:
-		-0.7px -0.7px 0 rgb(226, 170, 17),
+        -0.7px -0.7px 0 rgb(226, 170, 17),
         0.7px -0.7px 0 rgb(226, 170, 17),
         -0.7px 0.7px 0 rgb(226, 170, 17),
-		0.7px 0.7px 0 rgb(226, 170, 17);
+        0.7px 0.7px 0 rgb(226, 170, 17);
 }
 
-#create {
+/* Input Fields on Form */
+.form-group {
+    width: 57%;
+    margin-left: 43%;
+}
+
+#title {
+    border: solid 1px rgb(226, 170, 17);
+    outline: 2px solid black;
+    background: rgba(255, 254, 254, 0.692);
+
+}
+
+label {
     font-family: Bleeding Cowboys;
-    font-size: 17px;
+    font-size: 21px;
+    text-shadow:
+      -0.2px -0.2px 0 rgb(226, 170, 17),
+      0.2px -0.2px 0 rgb(226, 170, 17),
+      -0.2px 0.2px 0 rgb(226, 170, 17),
+      0.2px 0.2px 0 rgb(226, 170, 17);
+}
+
+#description {
+    border: solid 1px rgb(226, 170, 17);
+    outline: 2px solid black;
+    background: rgba(255, 254, 254, 0.692);
+    height: 140px;
+}
+
+#reward {
+    border: solid 1px rgb(226, 170, 17);
+    outline: 2px solid black;
+    background: rgba(255, 254, 254, 0.692);
+
+}
+
+.add_button {
+    font-family: Bleeding Cowboys;
+    font-size: 20px;
+    background: rgba(255, 254, 254, 0.795);
+    border: solid 2px black;
+    outline: 1px solid rgb(226, 170, 17);
+    text-shadow:
+      -0.2px -0.2px 0 rgb(226, 170, 17),
+      0.2px -0.2px 0 rgb(226, 170, 17),
+      -0.2px 0.2px 0 rgb(226, 170, 17),
+      0.2px 0.2px 0 rgb(226, 170, 17);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 43%;
+}
+
+.viewable {
+    font-family: Bleeding Cowboys;
+    font-size: 25px;
+    padding-left: 477px;
+    padding-top: 34px;
+    text-shadow:
+      -0.2px -0.2px 0 rgb(226, 170, 17),
+      0.2px -0.2px 0 rgb(226, 170, 17),
+      -0.2px 0.2px 0 rgb(226, 170, 17),
+      0.2px 0.2px 0 rgb(226, 170, 17);    
+}
+
+.button1 {
+    font-family: Bleeding Cowboys;
+    font-size: 13px;
     background: rgba(255, 254, 254, 0.486);
+    margin-right: 0%;
+    margin-left: 85%;
+    margin-top: 0.1%;
+    width: 12%;
+    float: left;
+    border: solid 1.5px rgb(226, 170, 17);
+    outline: 3px solid black;
+    text-shadow:
+		-0.2px -0.2px 0 rgb(226, 170, 17),
+        0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px 0.2px 0 rgb(226, 170, 17),
+        0.2px 0.2px 0 rgb(226, 170, 17);
+    padding-right: 4%;
+    padding-left: 4%;
+}
+
+.button2 {
+    font-family: Bleeding Cowboys;
+    font-size: 13px;
+    background: rgba(255, 254, 254, 0.486);
+    margin-right: 0%;
+    margin-left: 100%;
+    margin-top: -4%;
+    width: 12%;
+    float: left;
+    border: solid 1.5px rgb(226, 170, 17);
+    outline: 3px solid black;
+    text-shadow:
+		-0.2px -0.2px 0 rgb(226, 170, 17),
+        0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px 0.2px 0 rgb(226, 170, 17),
+        0.2px 0.2px 0 rgb(226, 170, 17);
+        padding-right: 2%;
+        padding-left: 2%;
+}
+
+.links {
+    padding-top: 1%;
+    padding-bottom: 3%;
     margin-right: 1%;
-    margin-left: 33%;
-    margin-top: 7%;
-    width: 19%;
-    float: left;
-    border: solid 1.5px rgb(226, 170, 17);
-    outline: 3px solid black;
-    text-shadow:
-		-0.2px -0.2px 0 rgb(226, 170, 17),
-        0.2px -0.2px 0 rgb(226, 170, 17),
-        -0.2px 0.2px 0 rgb(226, 170, 17),
-		0.2px 0.2px 0 rgb(226, 170, 17);
 }
-
-#bounty {
-    font-family: Bleeding Cowboys;
-    font-size: 17px;
-    background: rgba(255, 254, 254, 0.486);
-    margin-left: 57%;
-    margin-top: -7.4%;
-    width: 19%;
-    float: left;
-    border: solid 1.5px rgb(226, 170, 17);
-    outline: 3px solid black;
-    text-shadow:
-		-0.2px -0.2px 0 rgb(226, 170, 17),
-        0.2px -0.2px 0 rgb(226, 170, 17),
-        -0.2px 0.2px 0 rgb(226, 170, 17),
-		0.2px 0.2px 0 rgb(226, 170, 17);
-}
-
-#text {
-    font-family: Bleeding Cowboys;
-    color: black;
-    font-size: 33px;
-    margin-left: 57%;
-    margin-top: 3%;
-    text-decoration: underline black;
-    text-shadow:
-		-0.5px -0.5px 0 rgb(226, 170, 17),
-        0.5px -0.5px 0 rgb(226, 170, 17),
-        -0.5px 0.5px 0 rgb(226, 170, 17),
-		0.5px 0.5px 0 rgb(226, 170, 17);
-}  
 
 /* Smoking Gun */
 .smoking_gun {
@@ -324,4 +379,8 @@ div.relative {
 
 .listings:nth-child(17) {
     animation-delay: 1.4s;
+}
+
+.formish {
+    width: 60px;
 }
