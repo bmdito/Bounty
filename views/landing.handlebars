@@ -1,12 +1,63 @@
-
 <div>
+{{!-- Smoking Gun --}}
+    <ul class="smoking_gun">
+        <div class="listings">
+            <li class="a"></li>
+        </div>
+        <div class="listings">
+            <li class="b"></li>
+        </div>
+        <div class="listings">
+            <li class="c"></li>
+        </div>
+        <div class="listings">
+            <li class="d"></li>
+        </div>
+        <div class="listings">
+            <li class="e"></li>
+        </div>
+        <div class="listings">
+            <li class="f"></li>
+        </div>
+        <div class="listings">
+            <li class="g"></li>
+        </div>
+        <div class="listings">
+            <li class="h"></li>
+        </div>
+        <div class="listings">
+            <li class="i"></li>
+        </div>
+        <div class="listings">
+            <li class="j"></li>
+        </div>
+        <div class="listings">
+            <li class="k"></li>
+        </div>
+        <div class="listings">
+            <li class="l"></li>
+        </div>
+        <div class="listings">
+            <li class="m"></li>
+        </div>
+        <div class="listings">
+            <li class="n"></li>
+        </div>
+        <div class="listings">
+            <li class="o"></li>
+        </div>
+        <div class="listings">
+            <li class="p"></li>
+        </div>
+        <div class="listings">
+            <li class="q"></li>
+        </div>
+    </ul>
     <div class="relative"><p>BOUNTY</p></div>
     <!-- Audio for rendering LANDING page-->
     <audio loop id="myAudio">
         <source src="./assets/The good the bad and the ugly.mp3" type="audio/mpeg">
     </audio>
-    <!-- Audio for Button Click Event -->
-    <!-- <audio id="button_fx" src="cartoon_ricochet.mp3" preload="auto"></audio> -->
     <br>
     <br>
     <br>
@@ -14,16 +65,14 @@
         <p>CREATE . DELIVER . COLLECT</p>
     </div>
     <!-- Submit CREATE Bounty Button with Audio -->
-    <!-- <button id="create" type="submit" name="Create Needed Task">Create Bounty</button> -->
-    <form action='/add' method='POST'>
+    <form action='/add' method='POST' class="landingForm">
     <button id="create" onclick="javascript:playSound('cartoon_ricochet.mp3')">Create Bounty</button>
     </form>
-    onclick="javascript:playSound('cartoon_ricochet.mp3');
-    <!-- Submit COLLECT Bounty Button with Audio -->
-    <!-- <button id="bounty" type="submit" name="Bounty">Collect Bounty</button> -->
-    <form action='/display' method='POST'>
-    <button id="bounty" onclick="javascript:playSound('cartoon_ricochet.mp3');">Wanted </button>
+    {{!-- onclick="javascript:playSound('cartoon_ricochet.mp3'); --}}
+    <form action='/display' method='POST'class="landingForm">
+    <button id="bounty" onclick="javascript:playSound('cartoon_ricochet.mp3');">Wanted</button>
     </form>
+
 {{!--     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/main.js"></script> --}}

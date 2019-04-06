@@ -10,22 +10,16 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/", function(req, res) {
-    
+  app.get("/", function(req, res) { 
       res.render("landing");
-  
   });
 
   app.post('/add', function(req,res){
-    console.log('butt click');
     res.redirect('add');
-
   });
 
   app.post('/display', function(req,res){
-    
     res.redirect('/bounties');
-
   });
   
   
@@ -35,7 +29,7 @@ module.exports = function(app) {
 	});
 
   // Create a new Bounty
-  app.post("/add", function(req, res) {
+  app.post("/add_bounty", function(req, res) {
 		db.Bounty.create({
 		  title: req.body.title,
 		  description: req.body.description,
@@ -43,14 +37,7 @@ module.exports = function(app) {
 		  completed: req.body.completed
 	
 		}).then(function() {
-		
-		
-		res.redirect('/bounties');
-		  
-		
-		  
+		res.redirect('/bounties');	  
 		});
-		
 	  });
-
 };
