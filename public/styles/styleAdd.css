@@ -1,5 +1,4 @@
 h1 {
-    font-family: Bleeding Cowboys;
     font-size: 73.5px;
     padding-top: 0%;
     margin-left: 33%;
@@ -26,13 +25,12 @@ h1 {
 }
 
 label {
-    font-family: Bleeding Cowboys;
     font-size: 21px;
     text-shadow:
-      -0.2px -0.2px 0 rgb(226, 170, 17),
-      0.2px -0.2px 0 rgb(226, 170, 17),
-      -0.2px 0.2px 0 rgb(226, 170, 17),
-      0.2px 0.2px 0 rgb(226, 170, 17);
+        -0.2px -0.2px 0 rgb(226, 170, 17),
+        0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px 0.2px 0 rgb(226, 170, 17),
+        0.2px 0.2px 0 rgb(226, 170, 17);
 }
 
 #description {
@@ -50,35 +48,32 @@ label {
 }
 
 .add_button {
-    font-family: Bleeding Cowboys;
     font-size: 20px;
     background: rgba(255, 254, 254, 0.795);
     border: solid 2px black;
     outline: 1px solid rgb(226, 170, 17);
     text-shadow:
-      -0.2px -0.2px 0 rgb(226, 170, 17),
-      0.2px -0.2px 0 rgb(226, 170, 17),
-      -0.2px 0.2px 0 rgb(226, 170, 17),
-      0.2px 0.2px 0 rgb(226, 170, 17);
+        -0.2px -0.2px 0 rgb(226, 170, 17),
+        0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px 0.2px 0 rgb(226, 170, 17),
+        0.2px 0.2px 0 rgb(226, 170, 17);
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 43%;
 }
 
 .viewable {
-    font-family: Bleeding Cowboys;
     font-size: 25px;
     padding-left: 477px;
     padding-top: 34px;
     text-shadow:
-      -0.2px -0.2px 0 rgb(226, 170, 17),
-      0.2px -0.2px 0 rgb(226, 170, 17),
-      -0.2px 0.2px 0 rgb(226, 170, 17),
-      0.2px 0.2px 0 rgb(226, 170, 17);    
+        -0.2px -0.2px 0 rgb(226, 170, 17),
+        0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px 0.2px 0 rgb(226, 170, 17),
+        0.2px 0.2px 0 rgb(226, 170, 17);
 }
 
 .button1 {
-    font-family: Bleeding Cowboys;
     font-size: 13px;
     background: rgba(255, 254, 254, 0.486);
     margin-right: 0%;
@@ -89,7 +84,7 @@ label {
     border: solid 1.5px rgb(226, 170, 17);
     outline: 3px solid black;
     text-shadow:
-		-0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px -0.2px 0 rgb(226, 170, 17),
         0.2px -0.2px 0 rgb(226, 170, 17),
         -0.2px 0.2px 0 rgb(226, 170, 17),
         0.2px 0.2px 0 rgb(226, 170, 17);
@@ -98,7 +93,6 @@ label {
 }
 
 .button2 {
-    font-family: Bleeding Cowboys;
     font-size: 13px;
     background: rgba(255, 254, 254, 0.486);
     margin-right: 0%;
@@ -109,12 +103,12 @@ label {
     border: solid 1.5px rgb(226, 170, 17);
     outline: 3px solid black;
     text-shadow:
-		-0.2px -0.2px 0 rgb(226, 170, 17),
+        -0.2px -0.2px 0 rgb(226, 170, 17),
         0.2px -0.2px 0 rgb(226, 170, 17),
         -0.2px 0.2px 0 rgb(226, 170, 17),
         0.2px 0.2px 0 rgb(226, 170, 17);
-        padding-right: 2%;
-        padding-left: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 .links {
@@ -293,23 +287,23 @@ label {
 .listings:nth-child(odd) {
     animation: anitmateOdd 5s linear infinite;
 }
+
 .listings:nth-child(17) {
     animation: none;
     filter: blur(15px);
 }
 
 @keyframes animateEven {
-    0%
-    {
-    transform: translate(0,0) scale(1);
-    opacity: 1;
-    filter: blur(5px);
-}
-    100%
-    {
-    transform: translate(100px,-500px) scale(3);
-    opacity: 0;
-    filter: blur(10px);
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        filter: blur(5px);
+    }
+
+    100% {
+        transform: translate(100px, -500px) scale(3);
+        opacity: 0;
+        filter: blur(10px);
     }
 }
 

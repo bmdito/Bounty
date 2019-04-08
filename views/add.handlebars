@@ -1,4 +1,5 @@
-{{!-- Smoking Gun --}}
+<div class="landingBG">
+    {{!-- Smoking Gun --}}
     <ul class="smoking_gun">
         <div class="listings">
             <li class="a"></li>
@@ -53,38 +54,40 @@
         </div>
     </ul>
 
-<section class="container">
-{{!-- New Buttons --}}
-    <form class="links homie" action='/' method='GET' >
-        <button class="button1" onclick="javascript:playSound('cartoon_ricochet.mp3')">Home</button>
-    </form>
-    <form class="links creatish" action='/bounties' method='GET' >
-        <button class="button2" onclick="javascript:playSound('cartoon_ricochet.mp3')">Wanted</button>
-    </form>
-    <div class="form-wrap">
-      <h1>Create Bounty</h1>
-      <p class="viewable">Your Bounty will be viewable by all Bounty Hunters</p>
-      {{#each errors}}
-      <div class="error rounded-0">
-          <p>{{text}}</p>
-      </div>
-      {{/each}}
-      <form action="/add_bounty" method="post">
-        <div class="form-group rounded-0">
-          <label for="title">Bounty Title</label>
-          <input type="text" name="title"  class="form-control input-box rounded-0" id="title" placeholder="eg. Bounty Posting Title"
-            maxlength="100" value={{title}}>
+    <section class="container">
+        {{!-- New Buttons --}}
+        <form class="links homie" action='/' method='GET'>
+            <button class="button1" onclick="javascript:playSound('cartoon_ricochet.mp3')">Home</button>
+        </form>
+        <form class="links creatish" action='/bounties' method='GET'>
+            <button class="button2" onclick="javascript:playSound('cartoon_ricochet.mp3')">Wanted</button>
+        </form>
+        <div class="form-wrap">
+            <h1>Create Bounty</h1>
+            <p class="viewable">Your Bounty will be viewable by all Bounty Hunters</p>
+            {{#each errors}}
+            <div class="error rounded-0">
+                <p>{{text}}</p>
+            </div>
+            {{/each}}
+            <form action="/add_bounty" method="post">
+                <div class="form-group rounded-0">
+                    <label for="title">Bounty Title</label>
+                    <input type="text" name="title" class="form-control input-box rounded-0" id="title"
+                        placeholder="eg. Bounty Posting Title" maxlength="100" value={{title}}>
+                </div>
+                <div class="form-group rounded-0">
+                    <label for="description"> Description</label>
+                    <textarea name="description" class="form-control input-box rounded-0" id="description"
+                        placeholder="Describe the details of the Bounty" rows="10" value={{description}}></textarea>
+                </div>
+                <div class="form-group rounded-0">
+                    <label for="payment">Reward</label>
+                    <input type="number" name="payment" class="form-control input-box rounded-0" id="reward"
+                        placeholder="eg. 5, 25, 50 rounded-0" value={{payment}}>
+                </div>
+                <input type="submit" value="Create Bounty" class="add_button btn btn-reverse rounded-0">
+            </form>
         </div>
-        <div class="form-group rounded-0">
-          <label for="description"> Description</label>
-          <textarea name="description" class="form-control input-box rounded-0" id="description" placeholder="Describe the details of the Bounty"
-            rows="10" value={{description}}></textarea>
-        </div>
-        <div class="form-group rounded-0">
-          <label for="payment">Reward</label>
-          <input type="number" name="payment" class="form-control input-box rounded-0" id="reward" placeholder="eg. 5, 25, 50 rounded-0" value={{payment}}>
-        </div>
-         <input type="submit" value="Create Bounty" class="add_button btn btn-reverse rounded-0">
-      </form>
-    </div>
-  </section>
+    </section>
+</div>

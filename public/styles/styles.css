@@ -1,5 +1,12 @@
+#home {
+  background-image: url("../images/ancient-antique-art-759550.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
 .bboard {
-  font-family: Bleeding Cowboys;
   font-size: 105px;
   text-align: center;
   margin-left: 0%;
@@ -9,35 +16,32 @@
   padding-top: 0%;
   padding-left: 2%;
   padding-right: 4%;
+  color: #000;
   text-shadow:
-      -0.7px -0.7px 0 rgb(226, 170, 17),
-      0.7px -0.7px 0 rgb(226, 170, 17),
-      -0.7px 0.7px 0 rgb(226, 170, 17),
-      0.7px 0.7px 0 rgb(226, 170, 17);
+    -0.7px -0.7px 0 rgb(226, 170, 17),
+    0.7px -0.7px 0 rgb(226, 170, 17),
+    -0.7px 0.7px 0 rgb(226, 170, 17),
+    0.7px 0.7px 0 rgb(226, 170, 17);
 }
 
-.opacity {
-  background-color: rgba(230, 230, 230, 0.158);
-}
+
 
 h2 {
-  font-family: Bleeding Cowboys;
   font-size: 48px;
   text-align: center;
   color: black;
-  margin-right: 10%; 
+  margin-right: 10%;
   margin-left: 7%;
   margin-top: 8%;
   text-decoration: underline black;
   text-shadow:
-      -0.5px -0.5px 0 rgb(226, 170, 17),
-      0.5px -0.5px 0 rgb(226, 170, 17),
-      -0.5px 0.5px 0 rgb(226, 170, 17),
-      0.5px 0.5px 0 rgb(226, 170, 17);
+    -0.5px -0.5px 0 rgb(226, 170, 17),
+    0.5px -0.5px 0 rgb(226, 170, 17),
+    -0.5px 0.5px 0 rgb(226, 170, 17),
+    0.5px 0.5px 0 rgb(226, 170, 17);
 }
 
 h3 {
-  font-family: Bleeding Cowboys;
   color: black;
   margin-top: 4%;
   font-size: 31px;
@@ -46,14 +50,13 @@ h3 {
   padding-left: 2%;
   padding-right: 10%;
   text-shadow:
-      -0.2px -0.2px 0 rgb(226, 170, 17),
-      0.2px -0.2px 0 rgb(226, 170, 17),
-      -0.2px 0.2px 0 rgb(226, 170, 17),
-      0.2px 0.2px 0 rgb(226, 170, 17);
+    -0.2px -0.2px 0 rgb(226, 170, 17),
+    0.2px -0.2px 0 rgb(226, 170, 17),
+    -0.2px 0.2px 0 rgb(226, 170, 17),
+    0.2px 0.2px 0 rgb(226, 170, 17);
 }
 
 .prog {
-  font-family: Bleeding Cowboys;
   color: black;
   margin-top: 4%;
   font-size: 25px;
@@ -63,16 +66,8 @@ h3 {
   padding-right: 10%;
 }
 
-#home {
-  background-image: url("../images/bg3c11.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-}
 
-.titTex {
-  font-size: 20px;
-  font-family: sans-serif;
-}
+
 
 .prog {
   font-size: 20px;
@@ -80,7 +75,6 @@ h3 {
 }
 
 li {
-  font-family: Bleeding Cowboys;
   color: black;
   margin-top: 4%;
   font-size: 45px;
@@ -97,7 +91,6 @@ li {
 
 /* Accepted Button */
 .accepted {
-  font-family: Bleeding Cowboys;
   font-size: 21px;
   background: rgba(255, 254, 254, 0.486);
   width: 43%;
@@ -110,7 +103,6 @@ li {
 
 /* Completed Button */
 .completed {
-  font-family: Bleeding Cowboys;
   font-size: 21px;
   background: rgba(255, 254, 254, 0.486);
   width: 43%;
@@ -130,7 +122,6 @@ hr {
 }
 
 .button3 {
-  font-family: Bleeding Cowboys;
   font-size: 15px;
   background: rgba(255, 254, 254, 0.486);
   margin-right: 0%;
@@ -141,16 +132,15 @@ hr {
   border: solid 1.5px rgb(226, 170, 17);
   outline: 3px solid black;
   text-shadow:
-      -0.2px -0.2px 0 rgb(226, 170, 17),
-      0.2px -0.2px 0 rgb(226, 170, 17),
-      -0.2px 0.2px 0 rgb(226, 170, 17),
-      0.2px 0.2px 0 rgb(226, 170, 17);
+    -0.2px -0.2px 0 rgb(226, 170, 17),
+    0.2px -0.2px 0 rgb(226, 170, 17),
+    -0.2px 0.2px 0 rgb(226, 170, 17),
+    0.2px 0.2px 0 rgb(226, 170, 17);
   padding-right: 3%;
   padding-left: 3%;
 }
 
 .button4 {
-  font-family: Bleeding Cowboys;
   font-size: 15px;
   background: rgba(255, 254, 254, 0.486);
   margin-right: 0%;
@@ -161,12 +151,12 @@ hr {
   border: solid 1.5px rgb(226, 170, 17);
   outline: 3px solid black;
   text-shadow:
-  -0.2px -0.2px 0 rgb(226, 170, 17),
-      0.2px -0.2px 0 rgb(226, 170, 17),
-      -0.2px 0.2px 0 rgb(226, 170, 17),
-      0.2px 0.2px 0 rgb(226, 170, 17);
-      padding-right: 2%;
-      padding-left: 2%;
+    -0.2px -0.2px 0 rgb(226, 170, 17),
+    0.2px -0.2px 0 rgb(226, 170, 17),
+    -0.2px 0.2px 0 rgb(226, 170, 17),
+    0.2px 0.2px 0 rgb(226, 170, 17);
+  padding-right: 2%;
+  padding-left: 2%;
 }
 
 .landingForm {
@@ -179,6 +169,22 @@ hr {
   padding-top: 22px;
 }
 
-.donezo{
+/* .opacity {
+  background-color: rgba(141, 141, 141, 0.39);
+background-size: 100%, auto;
+background-attachment: fixed;
+} */
+
+.donezo {
   text-decoration: line-through;
+}
+
+.titTex {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
 }

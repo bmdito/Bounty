@@ -6,71 +6,82 @@
     <button class="button4" onclick="javascript:playSound('cartoon_ricochet.mp3')">Create</button>
   </form>
   <div class="opacity">
-  <h1 class="bboard">Bounty Board</h1> 
-  <h2>Open Bounties</h2>
-  <br>
-  <ul style="list-style: none">
-    {{#each bounties}}
-    {{#if completed}}
-    {{else}}
-    {{#if accepted}}
-    {{else}}
-    <li style="list-style: none;">
-      <h3>Title: <span class="titTex"> {{title}}</span> </h3>
-      <h3>Description: <span class="titTex"> {{description}}</span></h3>
-      <h3>Reward: <span class="titTex"> {{payment}}</span></h3>
-      <form method="POST" action="/bounties/accepted/{{this.id}}?_method=PUT"class="landingForm">
-        <button class="accepted">Accept</button>
-      </form>
-    </li>
-    <hr>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    {{/if}}
-    {{/if}}
-    {{/each}}
-  </ul>
-  <h2>Bounties In Progress</h2>
-  <br>
-  <ul style="list-style: none">
-    {{#each bounties}}
-    {{#if accepted}}
-    {{#if completed}}
-    {{else}}
-    <li style="list-style: none;">
-      <h3>Title: <span class="titTex"> {{title}}</span></h3>
-      <h3>Description: <span class="titTex"> {{description}}</span></h3>
-       <h3>Reward: <span class="titTex"> {{payment}}</span></h3>
-      <form method="POST" action="/bounties/completed/{{this.id}}?_method=PUT" class="landingForm">
-      <button class="completed" data-id="{{id}}" data-accept="{{completed}}">Complete</button>
-      </form>
-    </li>
-    <hr>
-    <br>
-    <br> 
-    <br>
-    <br>
-    <br>
-    {{/if}}
-    {{/if}}
-    {{/each}}
-  </ul>
-  <h2>Bounties Completed</h2>
-  <br>
-  <ul style="list-style: none">
-    {{#each bounties}}
-    {{#if completed}}
-    <li style="list-style: none;">
-      <h3 class="donezo">Title: <span class="titTex"> {{title}}</span></h3>
-      <h3 class="donezo">Description: <span class="titTex"> {{description}}</span></h3>
-       <h3 class="donezo">Reward: <span class="titTex"> {{payment}}</span></h3>
-    </li> 
-    <hr> 
-    {{/if}}
-    {{/each}}
-  </ul>
+    <h1 class="bboard">Bounty Board</h1>
+    <div class="wrapper">
+      <div class="grid">
+        <h2>Open Bounties</h2>
+        <br>
+        <ul style="list-style: none">
+          {{#each bounties}}
+          {{#if completed}}
+          {{else}}
+          {{#if accepted}}
+          {{else}}
+          <li style="list-style: none;">
+            <h3>Title <br><span class="titTex"> {{title}}</span> </h3>
+            <h3>Description <br> <span class="titTex"> {{description}}</span></h3>
+            <h3>Reward <br><span class="titTex">$ {{payment}}</span></h3>
+            <form method="POST" action="/bounties/accepted/{{this.id}}?_method=PUT" class="bountyBtn">
+              <button class="accepted">Accept</button>
+            </form>
+          </li>
+          {{/if}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      {{!-- End of Open Bounties --}}
+
+      {{!-- Beginning of In Progress --}}
+      <div class="grid">
+        <h2>In Progress</h2>
+        <br>
+        <ul style="list-style: none">
+          {{#each bounties}}
+          {{#if accepted}}
+          {{#if completed}}
+          {{else}}
+          <li style="list-style: none;">
+            <h3>Title <span class="titTex"> <br>{{title}}</span></h3>
+            <h3>Description <br><span class="titTex"> {{description}}</span></h3>
+            <h3>Reward <br><span class="titTex">$ {{payment}}</span></h3>
+            <form method="POST" action="/bounties/completed/{{this.id}}?_method=PUT" class="bountyBtn">
+              <button class="completed" data-id="{{id}}" data-accept="{{completed}}">Complete</button>
+            </form>
+          </li>
+          {{/if}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      {{!-- End of In Progress --}}
+
+      {{!-- Begin of Completed --}}
+      <div class="grid">
+        <h2>Completed</h2>
+        <br>
+        <ul style="list-style: none">
+          {{#each bounties}}
+          {{#if completed}}
+          <li style="list-style: none;">
+            <h3>Title <br><span class="titTex "> {{title}}</span></h3>
+            <h3>Description <br><span class="titTex donezo"> {{description}}</span></h3>
+            <h3>Rewarded <br><span class="titTex donezo">$ {{payment}}</span></h3>
+            <form method="post" action="/bounties/delete/{{this.id}}" class="bountyBtn">
+              <button class="accepted">Delete</button>
+            </form>
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      {{!-- End Completed --}}
+    </div>
+    {{!-- End of Wrapper --}}
+
   </div>
-</div>
+  {{!-- End of Id Home --}}
+
+
+
+
