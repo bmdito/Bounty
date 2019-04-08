@@ -67,6 +67,7 @@ h3 {
   background-image: url("../images/bg3c11.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  background-size: cover;
 }
 
 .titTex {
@@ -100,12 +101,12 @@ li {
   font-family: Bleeding Cowboys;
   font-size: 21px;
   background: rgba(255, 254, 254, 0.486);
-  width: 43%;
+  width: 20%;
   border: solid 2px rgb(226, 170, 17);
   outline: 4px solid black;
   padding-left: 1%;
   padding-right: 1%;
-  margin-left: -28%;
+  margin-left: 25%;
 }
 
 /* Completed Button */
@@ -113,12 +114,12 @@ li {
   font-family: Bleeding Cowboys;
   font-size: 21px;
   background: rgba(255, 254, 254, 0.486);
-  width: 43%;
+  width: 20%;
   border: solid 2px rgb(226, 170, 17);
   outline: 4px solid black;
   padding-left: 1%;
   padding-right: 1%;
-  margin-left: -28%;
+  margin-left: 25%;
 }
 
 hr {
@@ -170,15 +171,23 @@ hr {
 }
 
 .landingForm {
-  padding-bottom: 10px;
+  padding-bottom: 25%;
   padding-left: 0%;
   padding-right: 1%;
-  width: 60%;
-  margin-right: 10px;
-  float: right;
-  padding-top: 22px;
+  width: 100%;
+  /* margin-right: 10px; */
+  /* float: right; */
+  padding-top: 5%;
+ 
 }
 
 .donezo{
   text-decoration: line-through;
+}
+
+.errorStyle{
+  font-size: 20px;
+  color:red;
+  font-weight: bolder;
+  margin-left:43%;
 }
