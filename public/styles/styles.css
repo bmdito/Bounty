@@ -160,13 +160,11 @@ hr {
 }
 
 .landingForm {
-  padding-bottom: 10px;
+  padding-bottom: 25%;
   padding-left: 0%;
   padding-right: 1%;
-  width: 60%;
-  margin-right: 10px;
-  float: right;
-  padding-top: 22px;
+  width: 100%;
+  
 }
 
 /* .opacity {
@@ -187,4 +185,11 @@ background-attachment: fixed;
 
 button:hover {
   cursor: pointer;
+}
+
+.errorStyle{
+  font-size: 20px;
+  color:red;
+ 
+  margin-left:43%;
 }

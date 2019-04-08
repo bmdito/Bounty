@@ -1,8 +1,24 @@
+/* body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'bleeding_cowboysregular';
+    background-size: cover;
+} */
+
 body {
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'bleeding_cowboysregular';
+    /* background-image: url("../images/bg3c7.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .landingBG {
@@ -33,48 +49,54 @@ div.relative {
     font-family: 'bleeding_cowboysregular';
     font-size: 17px;
     background: rgba(255, 254, 254, 0.486);
-    margin-right: 1%;
-    margin-left: 33%;
-    margin-top: 7%;
-    width: 19%;
+    
+    margin-left: 28%;
+    margin-top: 15%;
+    width: 60%;
     float: left;
     border: solid 1.5px rgb(226, 170, 17);
     outline: 3px solid black;
     text-shadow:
-        -0.2px -0.2px 0 rgb(226, 170, 17),
+		-0.2px -0.2px 0 rgb(226, 170, 17),
         0.2px -0.2px 0 rgb(226, 170, 17),
         -0.2px 0.2px 0 rgb(226, 170, 17),
-        0.2px 0.2px 0 rgb(226, 170, 17);
+		0.2px 0.2px 0 rgb(226, 170, 17);
 }
 
 #bounty {
+    font-family: 'bleeding_cowboysregular';
     font-size: 17px;
     background: rgba(255, 254, 254, 0.486);
-    margin-left: 57%;
-    margin-top: -7.4%;
-    width: 19%;
+    /* margin-left: 57%; */
+    margin-top: 15%;
+    width: 40%;
+    
     float: left;
     border: solid 1.5px rgb(226, 170, 17);
     outline: 3px solid black;
     text-shadow:
-        -0.2px -0.2px 0 rgb(226, 170, 17),
+		-0.2px -0.2px 0 rgb(226, 170, 17),
         0.2px -0.2px 0 rgb(226, 170, 17),
         -0.2px 0.2px 0 rgb(226, 170, 17),
-        0.2px 0.2px 0 rgb(226, 170, 17);
+		0.2px 0.2px 0 rgb(226, 170, 17);
 }
 
 #text {
+    font-family: 'bleeding_cowboysregular';
     color: black;
     font-size: 33px;
-    margin-left: 57%;
-    margin-top: 3%;
+    margin-left: 28%;
+    /* margin-left: 57%;
+    margin-top: 3%; */
     text-decoration: underline black;
     text-shadow:
-        -0.5px -0.5px 0 rgb(226, 170, 17),
+		-0.5px -0.5px 0 rgb(226, 170, 17),
         0.5px -0.5px 0 rgb(226, 170, 17),
         -0.5px 0.5px 0 rgb(226, 170, 17),
         0.5px 0.5px 0 rgb(226, 170, 17);
-}
+    line-height: 200px;    
+}  
+
 
 /* Smoking Gun */
 .smoking_gun {

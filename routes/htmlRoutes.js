@@ -29,15 +29,44 @@ module.exports = function(app) {
 	});
 
   // Create a new Bounty
+  // Create a new Bounty
   app.post("/add_bounty", function(req, res) {
-		db.Bounty.create({
-		  title: req.body.title,
-		  description: req.body.description,
-		  payment: req.body.payment,
-		  completed: req.body.completed
-	
-		}).then(function() {
-		res.redirect('/bounties');	  
-		});
-	  });
-};
+
+    let { title, description, payment } = req.body;
+    let errors = [];
+    
+    //collects errors for missing fields
+    if(!title){
+      errors.push({ text: "please add title!"});
+    }
+  
+    if(!description){
+      errors.push({ text: "please add a Bounty description!"});
+    }
+  
+    if(!payment){
+      errors.push({ text: "please add a Reward!"});
+    }
+  
+    if(errors.length>0){
+      res.render('add', {
+          errors,
+          title,
+          description,
+          payment      
+      
+      });
+    } else {
+  
+      db.Bounty.create({
+        title: req.body.title,
+        description: req.body.description,
+        payment: req.body.payment,
+        completed: req.body.completed
+    
+      }).then(function() {
+      res.redirect('/bounties');	  
+      });
+    }    
+      });
+  };
