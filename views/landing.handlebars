@@ -1,5 +1,7 @@
-<div>
-{{!-- Smoking Gun --}}
+<audio id="my_audio" src="/audio/landing_theme.mp3" loop="loop"></audio>
+
+<div class="landingBG">
+    {{!-- Smoking Gun --}}
     <ul class="smoking_gun">
         <div class="listings">
             <li class="a"></li>
@@ -53,27 +55,24 @@
             <li class="q"></li>
         </div>
     </ul>
-    <div class="relative"><p>BOUNTY</p></div>
-    <!-- Audio for rendering LANDING page-->
-    <audio loop id="myAudio">
-        <source src="./assets/The good the bad and the ugly.mp3" type="audio/mpeg">
-    </audio>
+    <div class="relative">
+        <p>BOUNTY</p>
+    </div>
     <br>
     <br>
     <br>
     <div id="text">
         <p>CREATE . DELIVER . COLLECT</p>
     </div>
-    <!-- Submit CREATE Bounty Button with Audio -->
     <form action='/add' method='POST' class="landingForm">
-    <button id="create" onclick="javascript:playSound('cartoon_ricochet.mp3')">Create Bounty</button>
+        <button id="create" onclick="javascript:playSound('cartoon_ricochet.mp3')">Create Bounty</button>
     </form>
     {{!-- onclick="javascript:playSound('cartoon_ricochet.mp3'); --}}
-    <form action='/display' method='POST'class="landingForm">
-    <button id="bounty" onclick="javascript:playSound('cartoon_ricochet.mp3');">Wanted</button>
+    <form action='/display' method='POST' class="landingForm">
+        <button id="bounty" onclick="javascript:playSound('cartoon_ricochet.mp3');">Wanted</button>
     </form>
 
-{{!--     
+    {{!--     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/main.js"></script> --}}
 </div>
@@ -82,19 +81,17 @@
 
 
 <!-- Place in js file for button fx -->
-    <script>
+<script>
     function playSound() {
-          var sound = document.getElementById("create");
-          sound.play();
-      }
-      console.log("play the sound");
-    </script>
+        var sound = document.getElementById("create");
+        sound.play();
+    }
+    console.log("play the sound");
+</script>
 
 <script>
-        function playSound() {
-              var sound = document.getElementById("bounty");
-              sound.play();
-          }
-        </script> 
-
-  
+    function playSound() {
+        var sound = document.getElementById("bounty");
+        sound.play();
+    }
+</script>
