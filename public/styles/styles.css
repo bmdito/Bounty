@@ -67,6 +67,7 @@ h3 {
   background-image: url("../images/bg3c11.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  background-size: cover;
 }
 
 .titTex {

@@ -1,5 +1,7 @@
 body {
     background-image: url("../images/bg3c7.jpg");
+    background-attachment: fixed;
+    background-size: cover;
     height: 100%;
     margin: 0;
     padding: 0;

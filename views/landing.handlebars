@@ -55,9 +55,7 @@
     </ul>
     <div class="relative"><p>BOUNTY</p></div>
     <!-- Audio for rendering LANDING page-->
-    <audio loop id="myAudio">
-        <source src="./assets/The good the bad and the ugly.mp3" type="audio/mpeg">
-    </audio>
+    <audio loop id="myAudio"><source src="../public/audio/landing_theme.mp3" type="audio/mpeg"></audio>
     <br>
     <br>
     <br>
@@ -72,29 +70,4 @@
     <form action='/display' method='POST'class="landingForm">
     <button id="bounty" onclick="javascript:playSound('cartoon_ricochet.mp3');">Wanted</button>
     </form>
-
-{{!--     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/main.js"></script> --}}
 </div>
-
-
-
-
-<!-- Place in js file for button fx -->
-    <script>
-    function playSound() {
-          var sound = document.getElementById("create");
-          sound.play();
-      }
-      console.log("play the sound");
-    </script>
-
-<script>
-        function playSound() {
-              var sound = document.getElementById("bounty");
-              sound.play();
-          }
-        </script> 
-
-  
